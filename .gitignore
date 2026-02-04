@@ -41,18 +41,13 @@ env/
 *.swo
 *~
 
-# Data files (keep structure, ignore large data)
-*.csv
-*.parquet
-*.pkl
-*.pickle
-!data/.gitkeep
-
-# Model outputs
+# Data files - include data/ folder, exclude outputs/
+outputs/*.csv
+outputs/*.parquet
 outputs/*.pkl
+outputs/*.pickle
 outputs/*.json
 outputs/*.png
-outputs/*.csv
 !outputs/.gitkeep
 
 # OS
